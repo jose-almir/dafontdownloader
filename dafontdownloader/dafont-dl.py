@@ -24,7 +24,7 @@ def main():
         except ValueError:
             print(crayons.red(f"{name} nonexistent in dafont.com", bold=True))
         else:
-            print(crayons.green("[DONE]"))
+            print(crayons.green("[DONE]", bold=True))
 
 if __name__ == "__main__":
     main()
