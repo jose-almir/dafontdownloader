@@ -23,7 +23,8 @@ class CompactFont:
             compact_file.extractall(self._tmp_dir_fonts)
             compact_file.close()
         except zipfile.BadZipFile:
-            raise zipfile.BadZipFile('Incompatible archive.')
+            print('Incompatible archive.')
+            shutil.rmtree(self._tmp_dir)
 
     def install_font_file(self):
         self._download_compact_file()
@@ -50,6 +51,6 @@ class Dafont:
         request = requests.get(self.BASE_URL + parsed_name)
 
         if not request.content:
-            raise ValueError(f"{name} non exists in dafont.com")
+            raise ValueError
 
         return CompactFont(request.content)
