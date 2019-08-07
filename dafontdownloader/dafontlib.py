@@ -23,7 +23,7 @@ class CompactFont:
             compact_file.extractall(self._tmp_dir_fonts)
             compact_file.close()
         except zipfile.BadZipFile:
-            raise Exception
+            raise zipfile.BadZipFile('Incompatible archive.')
 
     def install_font_file(self):
         self._download_compact_file()
