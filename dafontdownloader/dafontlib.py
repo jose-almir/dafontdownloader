@@ -24,7 +24,6 @@ class CompactFont:
             compact_file.close()
         except zipfile.BadZipFile:
             print('Incompatible archive.')
-            shutil.rmtree(self._tmp_dir)
 
     def install_font_file(self):
         self._download_compact_file()
