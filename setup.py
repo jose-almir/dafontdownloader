@@ -8,7 +8,7 @@ DESCRIPTION = 'Making it easy to download fonts.'
 URL = 'https://github.com/resilientcod/dafontdownloader'
 EMAIL = 'resilientcod@gmail.com'
 AUTHOR = 'José Almir'
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 LICENSE = 'GPL'
 
 REQUIRED=['crayons', 'requests', 'docopt']
@@ -34,6 +34,6 @@ setup(
     packages=find_packages(),
     py_modules=['dafontlib', 'dafont-dl'],
     entry_point={
-        'console_scripts': ['dafont-dl=dafont-dl:main']
+        'console_scripts': ['dafont-dl=dafontdownloader.dafont-dl:main']
     }
 )

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dafontdownloader
+Version: 0.1.2
+Summary: Making it easy to download fonts.
+Home-page: https://github.com/resilientcod/dafontdownloader
+Author: José Almir
+Author-email: resilientcod@gmail.com
+License: GPL
+Description: # dafontdownloader
+Keywords: font dafont downloader dl
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Description-Content-Type: text/markdown

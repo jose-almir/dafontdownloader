@@ -1,0 +1,10 @@
+README.md
+dafont-dl.py
+dafontlib.py
+setup.cfg
+setup.py
+dafontdownloader.egg-info/PKG-INFO
+dafontdownloader.egg-info/SOURCES.txt
+dafontdownloader.egg-info/dependency_links.txt
+dafontdownloader.egg-info/requires.txt
+dafontdownloader.egg-info/top_level.txt
