@@ -26,5 +26,5 @@ def main():
         else:
             print(crayons.green("[DONE]"))
 
-
-main()
+if __name__ == "__main__":
+    main()
