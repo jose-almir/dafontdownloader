@@ -1,3 +1,0 @@
-[console_scripts]
-dafontdownloader = dafontdownloader.__main__:main
-
