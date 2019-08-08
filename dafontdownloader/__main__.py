@@ -13,7 +13,7 @@ import docopt
 import crayons
 
 def main():
-    args = docopt.docopt(__doc__, version='dafont-dl v0.0.1')
+    args = docopt.docopt(__doc__, version='dafont-dl v0.2.0')
     df_obj = Dafont()
     if args['<name-font>']:
         try:
