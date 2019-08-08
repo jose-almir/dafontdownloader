@@ -66,3 +66,17 @@ This allow install in `bin` directory, making it unnecessary to use steps 2 and 
 After installation, type `dafontdownloader` in the terminal to verify that everything is correct,
 as in the image:
 ![print1](print1.png)
+
+Then use: `dafontdownloader <name-font>` to download and install fonts from dafont site.
+
+Example:
+
+`dafontdownloader Nemesis Grant`
+
+**Attention:** Make sure you type the name correctly!
+
+### More info
+
+The fonts are installed in the user's local `.fonts` directory
+
+Enjoy!
