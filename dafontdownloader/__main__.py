@@ -1,15 +1,14 @@
-"""dafont-dl - making it easy to download fonts.
+"""dafontdownloader - making it easy to download fonts.
 
 Usage:
-  dafont-dl <name-font>...
-  dafont-dl (-h | --help)
-  dafont-dl --version
+  dafontdownloader <name-font>...
+  dafontdownloader (-h | --help)
+  dafontdownloader --version
 Options:
   -h --help   Show help screen
   --version   Show current version
 """
-
-from dafontlib import Dafont, CompactFont
+from dafontdownloader import Dafont, CompactFont
 import docopt
 import crayons
 
