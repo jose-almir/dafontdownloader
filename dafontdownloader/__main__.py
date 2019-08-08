@@ -10,7 +10,7 @@ Options:
 """
 from dafontdownloader import Dafont, CompactFont
 import docopt
-import crayons
+
 
 def main():
     args = docopt.docopt(__doc__, version='dafont-dl v0.2.0')
@@ -21,9 +21,9 @@ def main():
             font_to_download = df_obj.search_font(name)
             font_to_download.install_font_file()
         except ValueError:
-            print(crayons.red(f"{name} nonexistent in dafont.com", bold=True))
+            print(f"{name} nonexistent in dafont.com")
         else:
-            print(crayons.green("[DONE]", bold=True))
+            print("[DONE]")
 
 if __name__ == "__main__":
     main()

@@ -11,7 +11,7 @@ AUTHOR = 'José Almir'
 VERSION = '0.2.0'
 LICENSE = 'GPL'
 
-REQUIRED=['crayons', 'requests', 'docopt']
+REQUIRED=['requests', 'docopt']
 
 setup(
     name=NAME,
