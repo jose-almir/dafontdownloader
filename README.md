@@ -2,7 +2,7 @@
 
   
 
-A python script to download fonts directly from [dafont](dafont.com) site.
+A python script to download fonts directly from [dafont](https://www.dafont.com/) site.
 
 ## Install
 
