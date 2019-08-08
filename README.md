@@ -1,5 +1,7 @@
-# dafontdownloader
+<img src="https://camo.githubusercontent.com/debb4136883d8a3585f83971f342da038183f627/68747470733a2f2f7777772e6461666f6e742e636f6d2f696d672f6461666f6e742e706e67" align="right">
 
+dafontdownloader
+=================
 
 A python script to download fonts directly from [dafont](https://www.dafont.com/) site.
 
