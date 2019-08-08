@@ -1,6 +1,5 @@
 # dafontdownloader
 
-![logodafont](https://www.dafont.com/img/dafont.png)
 
 A python script to download fonts directly from [dafont](https://www.dafont.com/) site.
 
@@ -80,3 +79,5 @@ Example:
 The fonts are installed in the user's local `.fonts` directory
 
 Enjoy!
+
+![logodafont](https://www.dafont.com/img/dafont.png)
