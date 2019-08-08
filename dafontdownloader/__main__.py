@@ -13,7 +13,7 @@ import docopt
 
 
 def main():
-    args = docopt.docopt(__doc__, version='dafont-dl v0.2.0')
+    args = docopt.docopt(__doc__, version='dafont-dl v0.2.1')
     df_obj = Dafont()
     if args['<name-font>']:
         try:
