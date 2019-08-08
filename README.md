@@ -65,7 +65,7 @@ This allow install in `bin` directory, making it unnecessary to use steps 2 and 
 ## Usage
 After installation, type `dafontdownloader` in the terminal to verify that everything is correct,
 as in the image:
-![print1](/home/resilientcod/Documentos/programming/print1.png)
+![image](https://i.imgur.com/VRY4gNZ.png)
 
 Then use: `dafontdownloader <name-font>` to download and install fonts from dafont site.
 
