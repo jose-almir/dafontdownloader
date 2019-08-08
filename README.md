@@ -1,4 +1,5 @@
-<img src="https://camo.githubusercontent.com/debb4136883d8a3585f83971f342da038183f627/68747470733a2f2f7777772e6461666f6e742e636f6d2f696d672f6461666f6e742e706e67" align="right">
+<a href="https://www.dafont.com/", target="_blank"><img src="https://camo.githubusercontent.com/debb4136883d8a3585f83971f342da038183f627/68747470733a2f2f7777772e6461666f6e742e636f6d2f696d672f6461666f6e742e706e67" align="right">
+</a>
 
 dafontdownloader
 =================
@@ -81,5 +82,3 @@ Example:
 The fonts are installed in the user's local `.fonts` directory
 
 Enjoy!
-
-![logodafont](https://www.dafont.com/img/dafont.png)
