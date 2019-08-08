@@ -63,5 +63,6 @@ To avoid using `sudo`, installation requires these steps:
 This allow install in `bin` directory, making it unnecessary to use steps 2 and 3 in the first way.
 
 ### Usage
-After installation, type `dafontdownloader` in the terminal to verify that everything is correct, 
-and then look for a font from [dafont](dafont.com) site.
+After installation, type `dafontdownloader` in the terminal to verify that everything is correct,
+as in the image:
+![print1](print1.png)
