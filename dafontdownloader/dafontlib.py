@@ -34,7 +34,7 @@ class CompactFont:
 
         if not os.path.exists(DEFAULT_FONT_DIR):
             os.makedirs(DEFAULT_FONT_DIR)
-        os.listdir(DEFAULT_FONT_DIR)
+
         for file in os.listdir(self._tmp_dir_fonts):
             if re.search(REGEX_TYPE_FONT, file):
                 shutil.copy2(self._tmp_dir_fonts + file, DEFAULT_FONT_DIR)
