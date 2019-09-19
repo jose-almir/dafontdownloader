@@ -8,7 +8,7 @@ Options:
   -h --help   Show help screen
   --version   Show current version
 """
-from dafontdownloader import Dafont, CompactFont
+from dafontdownloader import Dafont
 import docopt
 
 
@@ -24,6 +24,7 @@ def main():
             print(f"{name} nonexistent in dafont.com")
         else:
             print("[DONE]")
+
 
 if __name__ == "__main__":
     main()

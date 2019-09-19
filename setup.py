@@ -1,7 +1,7 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open('README.md') as fh:
-    long_description=fh.read()
+    long_description = fh.read()
 
 NAME = 'dafontdownloader'
 DESCRIPTION = 'Making it easy to download fonts.'
@@ -11,7 +11,7 @@ AUTHOR = 'José Almir'
 VERSION = '0.2.2'
 LICENSE = 'GPL'
 
-REQUIRED=['requests', 'docopt']
+REQUIRED = ['requests', 'docopt']
 
 setup(
     name=NAME,
