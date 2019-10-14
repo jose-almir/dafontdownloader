@@ -37,7 +37,7 @@ class CompactFont:
 
         for file in os.listdir(self._tmp_dir_fonts):
             if re.search(REGEX_TYPE_FONT, file):
-                shutil.copy2(self._tmp_dir_fonts + file, DEFAULT_FONT_DIR)
+                shutil.copy2(os.path.join(self._tmp_dir_fonts, file), DEFAULT_FONT_DIR)
         shutil.rmtree(self._tmp_dir)
 
 
