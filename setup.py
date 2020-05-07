@@ -8,7 +8,7 @@ DESCRIPTION = 'Making it easy to download fonts.'
 URL = 'https://github.com/resilientcod/dafontdownloader'
 EMAIL = 'resilientcod@gmail.com'
 AUTHOR = 'José Almir'
-VERSION = '0.2.2'
+VERSION = '0.5'
 LICENSE = 'GPL'
 
 REQUIRED = ['requests', 'docopt']

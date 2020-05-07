@@ -1,10 +1,14 @@
 <img src="https://camo.githubusercontent.com/debb4136883d8a3585f83971f342da038183f627/68747470733a2f2f7777772e6461666f6e742e636f6d2f696d672f6461666f6e742e706e67" align="right">
 
 
-dafontdownloader
+dafontdownloader 0.5
 =================
 
 A python script to download fonts directly from [dafont](https://www.dafont.com/) site.
+
+## What's new in 0.5
+
+* Windows compatible
 
 ## Install
 
@@ -22,6 +26,8 @@ To avoid using `sudo`, installation requires these steps:
 
 * `pip install dafontdownloader --user`
 
+
+*Obs: if you are on windows you don't need to perform the following steps*
   
 
 2. Use `export` to persistent use of dafontdownloader script:

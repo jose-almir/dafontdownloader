@@ -4,14 +4,15 @@ import shutil
 import tempfile
 import zipfile
 import requests
+import platform
 
 
 class CompactFont:
     def __init__(self, bin_content):
         self.bin_content = bin_content
         self._tmp_dir = tempfile.mkdtemp()
-        self._tmp_compact_file = f"{self._tmp_dir}/font_file.zip"
-        self._tmp_dir_fonts = f"{self._tmp_dir}/dir_font/"
+        self._tmp_compact_file = os.sep.join([self._tmp_dir, 'font_file.zip'])
+        self._tmp_dir_fonts = os.sep.join([self._tmp_dir, 'dirfont'])
 
     def _download_compact_file(self):
         with open(self._tmp_compact_file, "wb") as f:
@@ -26,18 +27,30 @@ class CompactFont:
             print('Incompatible archive.')
 
     def install_font_file(self):
+        current_system = platform.system()
+
         self._download_compact_file()
         self._extract_compact_file()
 
         REGEX_TYPE_FONT = r"^.*?\.(otf|ttf|OTF|TTF)$"
-        DEFAULT_FONT_DIR = os.path.expanduser('~/.fonts')
 
-        if not os.path.exists(DEFAULT_FONT_DIR):
-            os.makedirs(DEFAULT_FONT_DIR)
+        if current_system == 'Linux':
+            DEFAULT_FONT_DIR = os.path.expanduser('~/.fonts')
 
-        for file in os.listdir(self._tmp_dir_fonts):
-            if re.search(REGEX_TYPE_FONT, file):
-                shutil.copy2(os.path.join(self._tmp_dir_fonts, file), DEFAULT_FONT_DIR)
+            if not os.path.exists(DEFAULT_FONT_DIR):
+                os.makedirs(DEFAULT_FONT_DIR)
+
+            for file in os.listdir(self._tmp_dir_fonts):
+                if re.search(REGEX_TYPE_FONT, file):
+                    shutil.copy2(os.path.join(
+                        self._tmp_dir_fonts, file), DEFAULT_FONT_DIR)
+        elif current_system == 'Windows':
+            for file in os.listdir(self._tmp_dir_fonts):
+                if re.search(REGEX_TYPE_FONT, file):
+                    os.system(os.sep.join([self._tmp_dir_fonts, f'"{file}"']))
+        else:
+            print('Unsuported system')
+
         shutil.rmtree(self._tmp_dir)
 
 
